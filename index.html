@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<title>Jukebox</title>
 </head>
 <body>
- 
+
   <div id="container">
   	<h1>Choose an Artist</h1>
     <div id="choose">
     <button onclick="pushButton(0)">Beethoven</button>
-    <button onclick="pushButton(1)">Mozart</button> 
+    <button onclick="pushButton(1)">Mozart</button>
     <button onclick="pushButton(2)">Chopin</button><br><br>
     </div>
-    
+
     <div id="player">
     	<div id="info" class="hidden">
       	<h2 id="artist">Artist</h2>
-      	<h4 id="title">Title</h4> 
-    	</div>  
+      	<h4 id="title">Title</h4>
+    	</div>
 
     	<audio id="audio" class="hidden" >
       	<source src="" type="audio/mpeg">
       	Your browser does not support html audio
     	</audio>
 
-    	<div id="controls" class = 'hidden'>  
+    	<div id="controls" class = 'hidden'>
       	<button onclick="Jukebox.playSong()">Play</button>
-      	<button onclick="Jukebox.pauseSong()">Pause</button> 
+      	<button onclick="Jukebox.pauseSong()">Pause</button>
       	<button onclick="Jukebox.stopSong()">Stop</button>
-    	</div>  
+    	</div>
     </div>
-    
+
   </div>
-  
-  <script type="text/javascript" src="index.js"></script>
+
+  <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
